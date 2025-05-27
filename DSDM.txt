@@ -1,65 +1,92 @@
-📌 Mis on DSDM?
-Agile metoodika süsteemide arenduseks.
+Projekti Valik
+Projekt: TTHK kodulehe loomine
 
-Kiire, paindlik ja äriväärtust loov.
+Kirjeldus: Loome lihtsa, kaasaegse ja informatiivse veebilehe Tallinna Tööstushariduskeskusele. Leht sisaldab kooli üldinfot, erialade tutvustusi, kontaktandmeid ja uudistevoogu. Eesmärk on parandada kooli nähtavust ja hõlbustada info leidmist nii uutele kui ka olemasolevatele õpilastele.
 
-Tekkis 1990ndatel (RAD täiendusena).
+3. Töö DSDM-i Põhimõtete Järgi
+Etapp 1: Eelprojekt (Pre-Project)
+Projekti eesmärk: Luua informatiivne, kasutajasõbralik ja mobiilisõbralik koduleht TTHK-le, mis teenib kooli õppurite, õpetajate ja huviliste vajadusi.
 
-🧱 4 Põhifaasi
-Pre-Project – eesmärk ja väärtus.
+Äriväärtus:
 
-Foundations – nõuded ja plaan.
+Suurem nähtavus uute õppurite seas
 
-Evolutionary Development – arendus iteratsioonidega.
+Kiirem ligipääs olulisemale infole
 
-Deployment – rakendamine ja koolitus.
+Usaldusväärne ja kaasaegne kooli kuvand
 
-⭐ 8 Põhiprintsiipi
-Äriväärtuse fookus.
+Väiksem töökoormus administraatoritel tänu selgele ülesehitusele
 
-Iteratiivne ja järkjärguline töö.
+Etapp 2: Alus (Foundations)
+Nõuded:
 
-Ajalimiidid (Timeboxing).
+Leht peab töötama mobiilis ja arvutis
 
-Koostöö kliendi ja tiimiga.
+Selged menüüd: Avaleht, Erialad, Õppetöö, Kontakt, Uudised
 
-Kvaliteet on esmatähtis.
+Võimalus lisada uudiseid ja teadaandeid
 
-Modelleerimine ja prototüübid.
+Mitmekeelne tugi (eesti/inglise)
 
-Selged eesmärgid.
+Projekti pikkus: 4 nädalat
 
-Pidev täiustamine.
+Meeskond: 1 disainer, 2 arendajat, 1 tester
 
-👥 Peamised rollid
-Business Sponsor – rahastaja.
+Piirangud:
 
-Project Manager – korraldaja.
+Aeg: 4 nädalat
 
-Solution Developer – arendaja.
+Ressursid: piiratud inimtööjõud, lihtsad tööriistad (nt HTML, CSS, JS, lihtne CMS või käsitsi hallatav)
 
-Business Analyst – sild kliendi ja arenduse vahel.
+MoSCoW meetod:
 
-🛠️ Tööriistad
-MoSCoW prioriseerimine:
+Tüüp	Ülesanded
+Must have	Avaleht, kontaktileht, erialade info, mobiilivaade, selge navigeerimine
+Should have	Mitmekeelne tugi, uudistevoog, kooli logo ja stiilielementide järgimine
+Could have	Google Maps kaardi lisamine, õppekorralduse PDF-ide üleslaadimine
+Won’t have	Sisselogimine, iseteenindusportaal, automaatne uudiskiri
 
-Must have (peab olema)
+Etapp 3: Iteratiivne Arendus (Evolutionary Development)
+Timeboxing (ajakastid):
+Kogu töö jagatakse 3 iteratsiooniks, igaüks 1 nädal pikk (viimane nädal jääb viimistlemiseks ja esitluseks).
 
-Should have (tore kui oleks)
+Iteratsioonid:
 
-Could have (võiks olla)
+1. Iteratsioon:
 
-Won’t have (praegu ei tee)
+Struktuuri loomine (menüü, lehe paigutus)
 
-Timeboxing: 2–4 nädalased tsüklid.
+Avaleht ja kontaktileht
 
-Prototüüpimine ja testimine igas iteratsioonis.
+Esmane testimine
 
-🧾 Näide projektist
-FAQ chatbot:
+2. Iteratsioon:
 
-Eesmärk: vastab korduvatele küsimustele.
+Erialade ja uudiste sektsioonid
 
-Iteratsioonid: arendus → test → tagasiside → täiustamine.
+Mitmekeelsuse lisamine
 
-Lõpus: valmiv ja töötav lahendus, esitlus.
+Tagasiside kogumine koolitöötajalt
+
+3. Iteratsioon:
+
+Kujundus ja responsiivsus (mobiili jaoks)
+
+Tehniline testimine, pisiparandused
+
+Valmistumine käivitamiseks
+
+Etapp 4: Käivitamine (Deployment)
+Valmib lõplik veebilehe prototüüp (statiline või CMS-põhine)
+
+Koostatakse lühiraport:
+
+Mis valmis: kõik MoSCoW meetodi „Must have“ elemendid + osa „Should have“
+
+Mis muutus: mitmekeelsus tehti lihtsustatud kujul; uudistevoog jäeti staatiliseks
+
+Projekti esitlus:
+
+Demo tööle
+
+Näidatakse äriväärtust: kasutatavus, ligipääsetavus, selge sisu
