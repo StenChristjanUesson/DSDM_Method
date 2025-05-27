@@ -1,0 +1,65 @@
+📌 Mis on DSDM?
+Agile metoodika süsteemide arenduseks.
+
+Kiire, paindlik ja äriväärtust loov.
+
+Tekkis 1990ndatel (RAD täiendusena).
+
+🧱 4 Põhifaasi
+Pre-Project – eesmärk ja väärtus.
+
+Foundations – nõuded ja plaan.
+
+Evolutionary Development – arendus iteratsioonidega.
+
+Deployment – rakendamine ja koolitus.
+
+⭐ 8 Põhiprintsiipi
+Äriväärtuse fookus.
+
+Iteratiivne ja järkjärguline töö.
+
+Ajalimiidid (Timeboxing).
+
+Koostöö kliendi ja tiimiga.
+
+Kvaliteet on esmatähtis.
+
+Modelleerimine ja prototüübid.
+
+Selged eesmärgid.
+
+Pidev täiustamine.
+
+👥 Peamised rollid
+Business Sponsor – rahastaja.
+
+Project Manager – korraldaja.
+
+Solution Developer – arendaja.
+
+Business Analyst – sild kliendi ja arenduse vahel.
+
+🛠️ Tööriistad
+MoSCoW prioriseerimine:
+
+Must have (peab olema)
+
+Should have (tore kui oleks)
+
+Could have (võiks olla)
+
+Won’t have (praegu ei tee)
+
+Timeboxing: 2–4 nädalased tsüklid.
+
+Prototüüpimine ja testimine igas iteratsioonis.
+
+🧾 Näide projektist
+FAQ chatbot:
+
+Eesmärk: vastab korduvatele küsimustele.
+
+Iteratsioonid: arendus → test → tagasiside → täiustamine.
+
+Lõpus: valmiv ja töötav lahendus, esitlus.
