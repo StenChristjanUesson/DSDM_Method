@@ -1,51 +1,55 @@
-import time
+from flask import Flask, render_template_string
 
-tasks = {
-    "Must have": ["Login system", "User dashboard", "Database setup"],
-    "Should have": ["Notifications", "User profile customization"],
-    "Could have": ["Dark mode", "Language selection"],
-    "Won't have": ["3D animations", "AR support"]
-}
+app = Flask(__name__)
 
-def delay(msg):
-    print(msg)
-    time.sleep(1)
+base_template = """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TTHK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        header { background: #003366; color: white; padding: 1em; text-align: center; }
+        nav { background: #0055a5; padding: 1em; text-align: center; }
+        nav a { color: white; margin: 0 1em; text-decoration: none; }
+        main { padding: 2em; }
+        footer { background: #003366; color: white; text-align: center; padding: 1em; margin-top: 2em; }
+    </style>
+</head>
+<body>
+    <header><h1>TTHK Kooli Koduleht</h1></header>
+    <nav>
+        <a href="/">Avaleht</a>
+        <a href="/erialad">Erialad</a>
+        <a href="/uudised">Uudised</a>
+        <a href="/kontakt">Kontakt</a>
+    </nav>
+    <main>{{ content|safe }}</main>
+    <footer>&copy; 2025 TTHK</footer>
+</body>
+</html>
+"""
 
-def pre_project():
-    delay("\n[Phase 1: Pre-Project]")
-    delay("Defining business value and goals...")
-    delay("Goal: Create a functional user platform for a school project.\n")
+@app.route("/")
+def home():
+    content = "<h2>Tere tulemast TTHK kodulehele</h2><p>Siit leiad info kooli ja õppimisvõimaluste kohta.</p>"
+    return render_template_string(base_template, content=content)
 
-def foundations():
-    delay("[Phase 2: Foundations]")
-    delay("Analyzing feasibility and outlining requirements...")
-    for priority, items in tasks.items():
-        print(f"\n{priority} tasks:")
-        for item in items:
-            print(f"- {item}")
-    print()
+@app.route("/kontakt")
+def kontakt():
+    content = "<h2>Kontakt</h2><p>Email: info@tthk.ee<br>Telefon: +372 600 1234<br>Aadress: Pärnu mnt 57, Tallinn</p>"
+    return render_template_string(base_template, content=content)
 
-def evolutionary_development():
-    delay("[Phase 3: Evolutionary Development]")
-    for priority in ["Must have", "Should have", "Could have"]:
-        delay(f"Working on {priority} tasks:")
-        for task in tasks[priority]:
-            print(f"  Developing: {task}")
-            time.sleep(0.5)
-        print()
-    print("Skipping 'Won't have' tasks.\n")
+@app.route("/erialad")
+def erialad():
+    content = "<h2>Erialad</h2><ul><li>IT-süsteemide spetsialist</li><li>Autotehnik</li><li>Elektrik</li><li>Kokk</li></ul>"
+    return render_template_string(base_template, content=content)
 
-def deployment():
-    delay("[Phase 4: Deployment]")
-    delay("Running final tests...")
-    delay("Deploying the solution...")
-    delay("Project successfully completed!\n")
-
-def main():
-    pre_project()
-    foundations()
-    evolutionary_development()
-    deployment()
+@app.route("/uudised")
+def uudised():
+    content = "<h2>Uudised</h2><ul><li>04.05.2025 - Vastuvõtt on alanud</li><li>27.05.2025 - Koolilõpuaktus</li><li>01.09.2025 - Uue õppeaasta algus</li></ul>"
+    return render_template_string(base_template, content=content)
 
 if __name__ == "__main__":
-    main()
+    app.run(debug=True)
